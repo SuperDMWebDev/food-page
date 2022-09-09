@@ -1,0 +1,153 @@
+:root {
+    --colorRed: #FE043C ;
+    --colorPurple: #2E266F;
+    --colorGrey: #707070;
+    --colorGreen: #31A24C;
+    --colorBlack: #000000;
+    --colorWhite: #FFF5EC;
+    --colorLightGreen: #35CD8C;
+    --colorBeige: #FFEDDE;
+    --colorWhite: #fff;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+
+}
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    width: 75%;
+    background-color: var(--colorBeige);
+    align-items: flex-start;
+}
+.expice {
+    color: var(--colorLightGreen);
+    font-size: 48px;
+    font-weight: bold;
+
+}
+.food {
+    color: var(--colorPurple);
+    font-size: 100px;
+    opacity: 5%;
+    font-weight: 900;
+    line-height: 100px;
+}
+.discover {
+    color: var(--colorPurple);
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 30px;
+}
+.headerMainWrapper {
+    padding: 15px 0 15px 20px;
+    position: relative;
+    margin-bottom: 150px;
+}
+.rectmenu {
+    min-width: 462px;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    top: 100;
+    left: 20px;
+    padding: 9px 11px 9px 30px;
+    
+}
+.rectmenu > p {
+    color: var(--colorPurple);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 90px;
+}
+.rectmenu > button {
+    min-width: 146px;
+    font-size: 30px;
+    font-weight: 600;
+    height: calc(100% - 18px);
+    border: none;
+    line-height: 90px;
+    color: white;
+    position: absolute;
+    right: 11px;
+    top: 9px;
+    border-top-left-radius: 60px;
+    background-color: var(--colorLightGreen);
+
+
+}
+.location {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    background-color: var(--colorLightGreen);
+    padding: 17px 58px 17px 32px;
+    color: var(--colorWhite);
+    font-size: 30px;
+    font-weight: medium;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+    
+}
+.location > i {
+    margin-top: 7px;
+    margin-right: 10px;
+    display: block;
+}
+.right {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    background-color: var(--colorLightGreen);
+    align-items: flex-end;
+}
+.right > img {
+    padding: 20px 38px;
+}
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px 45px 12px;
+}
+.header-img {
+    position: relative;
+}
+.header-food-img {
+    display: block;
+    position: relative;
+    z-index: 1;
+
+}
+.header-lettuce {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: -110px;
+    right: -20px;
+
+
+}
+.header-dots {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 10px;
+
+}
